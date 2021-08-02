@@ -318,29 +318,37 @@ class _ProfileState extends State<Profile> {
                                 ),
                                 textAlign: TextAlign.center,
                               ),
-                              Card(
-                                child: ListTile(
-                                  leading: Icon(Icons.car_rental),
-                                  title: Center(
-                                      child: Text(
-                                    "Driver: Driver5",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),
-                                  )),
-                                  subtitle: Center(
-                                    child: SingleChildScrollView(
-                                      child: Column(
-                                        children: [
-                                          Text("Date: 29th May, 2021"),
-                                          Text("Distance: 29km")
-                                        ],
+                              GestureDetector(
+                                onTap: (){
+                                  ///[ YOUR CODE TO NAVIGATE]
+                                  ///
+                                  //Navigator.of(context).pushNamed(context, "/details")
+                                  print("navigating");
+                                },
+                                child: Card(
+                                  child: ListTile(
+                                    leading: Icon(Icons.car_rental),
+                                    title: Center(
+                                        child: Text(
+                                      "Driver: Driver5",
+                                      style:
+                                          TextStyle(fontWeight: FontWeight.bold),
+                                    )),
+                                    subtitle: Center(
+                                      child: SingleChildScrollView(
+                                        child: Column(
+                                          children: [
+                                            Text("Date: 29th May, 2021"),
+                                            Text("Distance: 29km")
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  trailing: Text(
-                                    "-\$10",
-                                    style: TextStyle(
-                                        fontSize: 18, color: Colors.red),
+                                    trailing: Text(
+                                      "-\$10",
+                                      style: TextStyle(
+                                          fontSize: 18, color: Colors.red),
+                                    ),
                                   ),
                                 ),
                               ),
